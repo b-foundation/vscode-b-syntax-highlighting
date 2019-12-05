@@ -26,5 +26,20 @@
   "icon": "images/b.png",
   "devDependencies": {
     "vsce": "^1.70.0"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "b",
+        "aliases": [
+          "B",
+          "b"
+        ],
+        "extensions": [
+          ".b"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ]
   }
 }
