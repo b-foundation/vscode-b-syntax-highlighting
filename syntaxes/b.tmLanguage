@@ -134,7 +134,7 @@
                 <key>name</key>
                 <string>constant.character.escape.b</string>
                 <key>match</key>
-                <string>\\.</string>
+                <string>\*[0net\(\)\*\"\']</string>
               </dict>
             </array>
           </dict>
@@ -151,7 +151,7 @@
                 <key>name</key>
                 <string>constant.character.escape.b</string>
                 <key>match</key>
-                <string>\\.</string>
+                <string>\*[0net\(\)\*\"\']</string>
               </dict>
             </array>
           </dict>

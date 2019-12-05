@@ -48,13 +48,13 @@ repository:
       end: '"'
       patterns:
       - name: constant.character.escape.b
-        match: '\\.'
+        match: '\*[0net\(\)\*\"\'']'
     - name: string.quoted.single.b
       begin: ''''
       end: ''''
       patterns:
       - name: constant.character.escape.b
-        match: '\\.'
+        match: '\*[0net\(\)\*\"\'']'
 
   keywords:
     patterns:
