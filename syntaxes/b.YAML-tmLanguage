@@ -55,8 +55,6 @@ repository:
       patterns:
       - name: constant.character.escape.b
         match: '\\.'
-    - name: string.regexp.b
-      match: '/((\\/)|([^/]))*/(?=\s*[,;)\.\n])'
 
   keywords:
     patterns:

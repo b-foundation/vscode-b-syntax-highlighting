@@ -155,12 +155,6 @@
               </dict>
             </array>
           </dict>
-          <dict>
-            <key>name</key>
-            <string>string.regexp.b</string>
-            <key>match</key>
-            <string>/((\\/)|([^/]))*/(?=\s*[,;)\.\n])</string>
-          </dict>
         </array>
       </dict>
       <key>keywords</key>
