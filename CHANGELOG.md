@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.0.1 (December 5, 2019)
+## 0.1.0 (December 5, 2019)
 
 - Add extension package configuration
 - Add a launch config for the vscode
