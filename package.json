@@ -40,6 +40,13 @@
         ],
         "configuration": "./language-configuration.json"
       }
+    ],
+    "grammars": [
+      {
+        "language": "b",
+        "scopeName": "source.b",
+        "path": "./syntaxes/b.tmLanguage"
+      }
     ]
   }
 }

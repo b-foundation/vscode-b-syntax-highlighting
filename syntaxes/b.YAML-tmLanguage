@@ -1,0 +1,82 @@
+name: B
+scopeName: source.b
+foldingStartMarker: '(\{|\()'
+foldingEndMarker: '(\}|\))'
+fileTypes:
+- b
+
+patterns:
+- include: '#code'
+
+repository:
+  code:
+    patterns:
+    - include: '#constants'
+    - include: '#operators'
+    - include: '#strings'
+    - include: '#keywords'
+    - include: '#scope'
+    - include: '#functions'
+    - include: '#variables'
+
+  constants:
+    patterns:
+    - name: constant.numeric.b
+      match: '\b(([0-9]+\.?[0-9]*)|(\.[0-9]+))\b'
+    - name: variable.other.constant.b
+      match: '\b([A-Z][A-Z0-9_]+)\b'
+
+  operators:
+    patterns:
+    - name: keyword.operator.logical.b
+      match: '!(?!=)|&&|\|\|'
+    - name: keyword.operator.bitwise.b
+      match: '~|<<|>>>|>>|&|\^|\|'
+    - name: keyword.operator.relational.b
+      match: '<=|>=|<>|<|>'
+    - name: keyword.operator.comparison.b
+      match: '===|!==|==|!='
+    - name: keyword.operator.arithmetic.b
+      match: '--|\+\+|(?<!/)\*\*|(?<!\*)/(?!/|\*)|%|\*(?<!/\*)(?!/([^\*]|$))|\+|-'
+    - name: keyword.operator.assignment.b
+      match: '=(?!(=|>))'
+
+  strings:
+    patterns:
+    - name: string.quoted.double.b
+      begin: '"'
+      end: '"'
+      patterns:
+      - name: constant.character.escape.b
+        match: '\\.'
+    - name: string.quoted.single.b
+      begin: ''''
+      end: ''''
+      patterns:
+      - name: constant.character.escape.b
+        match: '\\.'
+    - name: string.regexp.b
+      match: '/((\\/)|([^/]))*/(?=\s*[,;)\.\n])'
+
+  keywords:
+    patterns:
+      - name: keyword.b
+        match: '(?<=^|[^@\w\.])(goto|if|else|switch|case|for|while|null|true|false|return)\b'
+
+  scope:
+    patterns:
+    - name: storage.type.primitive.b
+      match: '(?<=^|[^@\w\.])(extrn|auto)\b'
+    - name: entity.name.type.b
+      match: '\b([A-Z]+\w*)\b'
+
+  functions:
+    patterns:
+    - name: entity.name.function.b
+      match: '(\w+)(?=\s*(<[\s\w.]+>\s*)?\()'
+
+  variables:
+    patterns:
+    - name: variable.other.b
+      match: '\b([_a-z]+\w*)\b'
+
