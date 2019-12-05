@@ -165,7 +165,7 @@
             <key>name</key>
             <string>keyword.b</string>
             <key>match</key>
-            <string>(?&lt;=^|[^@\w\.])(goto|if|else|switch|case|for|while|null|true|false|return)\b</string>
+            <string>(?&lt;=^|[^@\w\.])(goto|if|else|switch|case|default|break|while|return)\b</string>
           </dict>
         </array>
       </dict>

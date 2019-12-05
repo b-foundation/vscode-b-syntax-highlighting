@@ -59,7 +59,7 @@ repository:
   keywords:
     patterns:
       - name: keyword.b
-        match: '(?<=^|[^@\w\.])(goto|if|else|switch|case|for|while|null|true|false|return)\b'
+        match: '(?<=^|[^@\w\.])(goto|if|else|switch|case|default|break|while|return)\b'
 
   scope:
     patterns:
