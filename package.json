@@ -47,6 +47,12 @@
         "scopeName": "source.b",
         "path": "./syntaxes/b.tmLanguage"
       }
+    ],
+    "snippets": [
+      {
+        "language": "b",
+        "path": "./snippets/b-blocks.json"
+      }
     ]
   }
 }
