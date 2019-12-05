@@ -1,0 +1,30 @@
+{
+  "name": "b-syntax-highlightning",
+  "displayName": "B Syntax Highlightning",
+  "description": "Syntax highlighting for the B language",
+  "version": "0.0.1",
+  "publisher": "baleiko",
+  "author": {
+    "name": "Valerii Baleiko",
+    "email": "baleyko@gmail.com"
+  },
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.36.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "b",
+    "blang",
+    "b language",
+    "b programming",
+    "b coding",
+    "b development"
+  ],
+  "icon": "images/b.png",
+  "devDependencies": {
+    "vsce": "^1.70.0"
+  }
+}
