@@ -33,9 +33,9 @@ repository:
     - name: keyword.operator.bitwise.b
       match: '~|<<|>>>|>>|&|\^|\|'
     - name: keyword.operator.relational.b
-      match: '<=|>=|<>|<|>'
+      match: '<=|>=|<|>'
     - name: keyword.operator.comparison.b
-      match: '===|!==|==|!='
+      match: '==|!='
     - name: keyword.operator.arithmetic.b
       match: '--|\+\+|(?<!/)\*\*|(?<!\*)/(?!/|\*)|%|\*(?<!/\*)(?!/([^\*]|$))|\+|-'
     - name: keyword.operator.assignment.b

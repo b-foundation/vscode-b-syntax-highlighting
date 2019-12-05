@@ -95,13 +95,13 @@
             <key>name</key>
             <string>keyword.operator.relational.b</string>
             <key>match</key>
-            <string>&lt;=|&gt;=|&lt;&gt;|&lt;|&gt;</string>
+            <string>&lt;=|&gt;=|&lt;|&gt;</string>
           </dict>
           <dict>
             <key>name</key>
             <string>keyword.operator.comparison.b</string>
             <key>match</key>
-            <string>===|!==|==|!=</string>
+            <string>==|!=</string>
           </dict>
           <dict>
             <key>name</key>
