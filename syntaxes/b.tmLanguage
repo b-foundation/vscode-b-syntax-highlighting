@@ -107,12 +107,6 @@
             <key>match</key>
             <string>\b(?&lt;![\.0-9])([0-9]+)(?![\.0-9])\b</string>
           </dict>
-          <dict>
-            <key>name</key>
-            <string>variable.other.constant.b</string>
-            <key>match</key>
-            <string>\b([A-Z][A-Z0-9_]+)\b</string>
-          </dict>
         </array>
       </dict>
       <key>operators</key>
