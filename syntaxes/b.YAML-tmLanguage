@@ -61,13 +61,13 @@ repository:
       end: '"'
       patterns:
       - name: constant.character.escape.b
-        match: '\*[0net\(\)\*\"\'']'
+        match: '(\*[0net\(\)\*\"\''])|(\%[scdo])'
     - name: string.quoted.single.b
       begin: ''''
       end: ''''
       patterns:
       - name: constant.character.escape.b
-        match: '\*[0net\(\)\*\"\'']'
+        match: '(\*[0net\(\)\*\"\''])|(\%[scdo])'
 
   keywords:
     patterns:
