@@ -1,4 +1,23 @@
 {
+	"auto-statement": {
+		"prefix": [
+			"auto"
+		],
+		"body": [
+			"auto $1 = $2;",
+			""
+		],
+		"description": "Auto statement"
+  },
+	"ternary-operator": {
+		"prefix": [
+			"?"
+		],
+		"body": [
+			"$1 ? $2 : $3"
+		],
+		"description": "Ternary operator"
+  },
   "if-else": {
     "prefix": [
       "if"
@@ -13,6 +32,28 @@
     ],
     "description": "If-else block"
   },
+	"switch": {
+		"prefix": [
+			"switch"
+		],
+		"body": [
+			"switch ($1) {",
+			"\t$2",
+			"}",
+			""
+		],
+		"description": "Switch block"
+  },
+	"case": {
+		"prefix": [
+			"case"
+		],
+		"body": [
+			"case $1:",
+			"\t$2"
+		],
+		"description": "Case block"
+	},
   "while-loop": {
     "prefix": [
       "while"
