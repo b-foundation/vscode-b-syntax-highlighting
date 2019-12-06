@@ -11,6 +11,7 @@ patterns:
 repository:
   code:
     patterns:
+    - include: '#comments'
     - include: '#constants'
     - include: '#operators'
     - include: '#strings'
@@ -18,6 +19,18 @@ repository:
     - include: '#scope'
     - include: '#functions'
     - include: '#variables'
+
+  comments:
+    patterns:
+    - name: comment.block.empty.b
+      match: '/\*\*/'
+      captures:
+        '0': { name: punctuation.definition.comment.b }
+    - name: comment.block.b
+      begin: '/\*'
+      captures:
+        '0': { name: punctuation.definition.comment.b }
+      end: '\*/'
 
   constants:
     patterns:

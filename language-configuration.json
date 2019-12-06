@@ -1,4 +1,7 @@
 {
+  "comments": {
+    "blockComment": ["/*", "*/"]
+  },
   "brackets": [
     ["{", "}"],
     ["[", "]"],
@@ -16,7 +19,8 @@
     ["[", "]"],
     ["(", ")"],
     { "open": "'", "close": "'", "notIn": ["string"] },
-    { "open": "\"", "close": "\"", "notIn": ["string"] }
+    { "open": "\"", "close": "\"", "notIn": ["string"] },
+    { "open": "/*", "close": " */", "notIn": ["string", "comment"] }
   ],
   "indentationRules": {
     "increaseIndentPattern": "^((?!\\/\\/).)*(\\{[^}\"']*|\\([^)\"']*|\\[[^\\]\"']*)$",

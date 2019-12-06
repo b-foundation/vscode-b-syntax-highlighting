@@ -29,6 +29,10 @@
         <array>
           <dict>
             <key>include</key>
+            <string>#comments</string>
+          </dict>
+          <dict>
+            <key>include</key>
             <string>#constants</string>
           </dict>
           <dict>
@@ -54,6 +58,42 @@
           <dict>
             <key>include</key>
             <string>#variables</string>
+          </dict>
+        </array>
+      </dict>
+      <key>comments</key>
+      <dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>comment.block.empty.b</string>
+            <key>match</key>
+            <string>/\*\*/</string>
+            <key>captures</key>
+            <dict>
+              <key>0</key>
+              <dict>
+                <key>name</key>
+                <string>punctuation.definition.comment.b</string>
+              </dict>
+            </dict>
+          </dict>
+          <dict>
+            <key>name</key>
+            <string>comment.block.b</string>
+            <key>begin</key>
+            <string>/\*</string>
+            <key>captures</key>
+            <dict>
+              <key>0</key>
+              <dict>
+                <key>name</key>
+                <string>punctuation.definition.comment.b</string>
+              </dict>
+            </dict>
+            <key>end</key>
+            <string>\*/</string>
           </dict>
         </array>
       </dict>
