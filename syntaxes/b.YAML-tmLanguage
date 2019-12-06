@@ -53,6 +53,21 @@ repository:
       match: '--|\+\+|(?<!/)\*\*|(?<!\*)/(?!/|\*)|%|\*(?<!/\*)(?!/([^\*]|$))|\+|-'
     - name: keyword.operator.assignment.b
       match: '(=>|(=(?!(=))))'
+    -
+      comment: 'keyword.operator.ternary.b'
+      begin: '\s*+(\?)(?!\.[^\d]|\?)'
+      end: '\s*(:)((?=::)|(?!:))'
+      beginCaptures:
+          '1': {name: keyword.operator.ternary.b}
+      endCaptures:
+          '1': {name: keyword.operator.ternary.b}
+      patterns:
+          - begin: '\s*+(?=((?:[$_\p{L}\p{Nl}]|\\u\h{4}|\\u{\h+})(?:[$_\p{L}\p{Mn}\p{Mc}\p{Nd}\p{Nl}\p{Pc}\x{200C}\x{200D}]|\\u\h{4}|\\u{\h+})*+)\s*:)'
+            end: '\s*(?=:)'
+            patterns:
+            - include: '#constant'
+            - include: '#variables'
+            - include: '#strings'
 
   strings:
     patterns:
