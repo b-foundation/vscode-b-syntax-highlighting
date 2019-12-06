@@ -18,6 +18,7 @@ repository:
     - include: '#keywords'
     - include: '#scope'
     - include: '#functions'
+    - include: '#labels'
     - include: '#variables'
 
   comments:
@@ -98,6 +99,11 @@ repository:
     patterns:
     - name: entity.name.function.b
       match: '(?<![\)\@\.\$\#\`\"''\]\\\~\^\w])([_A-Za-z]\w*)(?=\s*\()'
+
+  labels:
+    patterns:
+    - name: keyword.other.b
+      match: '\b([_a-zA-Z]+\w*)(?=\:(?!\:))\b'
 
   variables:
     patterns:

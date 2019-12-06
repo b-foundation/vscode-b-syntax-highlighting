@@ -57,6 +57,10 @@
           </dict>
           <dict>
             <key>include</key>
+            <string>#labels</string>
+          </dict>
+          <dict>
+            <key>include</key>
             <string>#variables</string>
           </dict>
         </array>
@@ -279,6 +283,18 @@
             <string>entity.name.function.b</string>
             <key>match</key>
             <string>(?&lt;![\)\@\.\$\#\`\"'\]\\\~\^\w])([_A-Za-z]\w*)(?=\s*\()</string>
+          </dict>
+        </array>
+      </dict>
+      <key>labels</key>
+      <dict>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>name</key>
+            <string>keyword.other.b</string>
+            <key>match</key>
+            <string>\b([_a-zA-Z]+\w*)(?=\:(?!\:))\b</string>
           </dict>
         </array>
       </dict>
