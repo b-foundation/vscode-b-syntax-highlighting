@@ -268,12 +268,6 @@
             <key>match</key>
             <string>(?&lt;=^|[^@\w\.])(extrn|auto)\b</string>
           </dict>
-          <dict>
-            <key>name</key>
-            <string>entity.name.type.b</string>
-            <key>match</key>
-            <string>\b([A-Z]+\w*)\b</string>
-          </dict>
         </array>
       </dict>
       <key>functions</key>

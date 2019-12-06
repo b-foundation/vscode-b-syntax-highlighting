@@ -93,8 +93,6 @@ repository:
     patterns:
     - name: storage.type.primitive.b
       match: '(?<=^|[^@\w\.])(extrn|auto)\b'
-    - name: entity.name.type.b
-      match: '\b([A-Z]+\w*)\b'
 
   functions:
     patterns:
