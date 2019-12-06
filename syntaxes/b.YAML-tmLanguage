@@ -102,4 +102,4 @@ repository:
   variables:
     patterns:
     - name: variable.other.b
-      match: '\b([_a-z]+\w*)\b'
+      match: '\b([_a-zA-z]+\w*)\b'

@@ -290,7 +290,7 @@
             <key>name</key>
             <string>variable.other.b</string>
             <key>match</key>
-            <string>\b([_a-z]+\w*)\b</string>
+            <string>\b([_a-zA-z]+\w*)\b</string>
           </dict>
         </array>
       </dict>
