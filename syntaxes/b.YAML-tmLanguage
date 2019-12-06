@@ -89,7 +89,7 @@ repository:
   keywords:
     patterns:
       - name: keyword.b
-        match: '(?<=^|[^@\w\.])(goto|if|else|switch|case|default|break|while|return)\b'
+        match: '(?<=^|[\s\{\}\;\:]|\*\/)(goto|if|else|switch|case|default|break|while|return)\b'
 
   scope:
     patterns:
