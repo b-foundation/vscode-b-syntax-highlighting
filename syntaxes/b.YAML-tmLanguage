@@ -101,7 +101,7 @@ repository:
   functions:
     patterns:
     - name: entity.name.function.b
-      match: '(\w+)(?=\s*(<[\s\w.]+>\s*)?\()'
+      match: '(?<![\)\@\.\$\#\`\"''\]\\\~\^\w])([_A-Za-z]\w*)(?=\s*\()'
 
   variables:
     patterns:

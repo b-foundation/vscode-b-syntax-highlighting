@@ -290,7 +290,7 @@
             <key>name</key>
             <string>entity.name.function.b</string>
             <key>match</key>
-            <string>(\w+)(?=\s*(&lt;[\s\w.]+&gt;\s*)?\()</string>
+            <string>(?&lt;![\)\@\.\$\#\`\"'\]\\\~\^\w])([_A-Za-z]\w*)(?=\s*\()</string>
           </dict>
         </array>
       </dict>
