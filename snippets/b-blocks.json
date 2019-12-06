@@ -1,68 +1,77 @@
 {
-	"auto-statement": {
-		"prefix": [
-			"auto"
-		],
-		"body": [
-			"auto $1 = $2;",
-			""
-		],
-		"description": "Auto statement"
-  },
-	"ternary-operator": {
-		"prefix": [
-			"?"
-		],
-		"body": [
-			"$1 ? $2 : $3"
-		],
-		"description": "Ternary operator"
-  },
-  "if-else": {
-    "prefix": [
-      "if"
+  "auto-statement": {
+    "prefix": "auto",
+    "body": [
+      "auto $1 = $2;",
+      "$3"
     ],
+    "description": "Auto statement"
+  },
+  "if-block-section": {
+    "prefix": "if",
     "body": [
       "if ($1) {",
       "\t$2",
-      "} else {",
-      "\t$3",
       "}",
-      ""
+      "$3"
     ],
-    "description": "If-else block"
+    "description": "If block section"
   },
-	"switch": {
-		"prefix": [
-			"switch"
-		],
-		"body": [
-			"switch ($1) {",
-			"\t$2",
-			"}",
-			""
-		],
-		"description": "Switch block"
-  },
-	"case": {
-		"prefix": [
-			"case"
-		],
-		"body": [
-			"case $1:",
-			"\t$2"
-		],
-		"description": "Case block"
-	},
-  "while-loop": {
-    "prefix": [
-      "while"
+  "else-if-block-section": {
+    "prefix": "}elseif",
+    "body": [
+      "} else if ($1) {",
+      "\t$2",
+      "}",
+      "$3"
     ],
+    "description": "Else-if block section"
+  },
+  "else-block-section": {
+    "prefix": "}else",
+    "body": [
+      "} else {",
+      "\t$1",
+      "}",
+      "$2"
+    ],
+    "description": "Else block section"
+  },
+  "switch-block-section": {
+    "prefix": "switch",
+    "body": [
+      "switch ($1) {",
+      "\t$2",
+      "}",
+      "$3"
+    ],
+    "description": "Switch block"
+  },
+  "case-block-section": {
+    "prefix": "case",
+    "body": [
+      "case $1:",
+      "\t$2",
+      "\tbreak;"
+      "$3"
+    ],
+    "description": "Case block section"
+  },
+  "default-block-section": {
+    "prefix": "def",
+    "body": [
+      "default:",
+      "\t$1"
+    ],
+    "description": "Default block section"
+  },
+  "while-block": {
+    "prefix": "while",
     "body": [
       "while ($1) {",
       "\t$2",
       "}",
-      ""
+      "$3"
     ],
     "description": "While-loop block"
   }
