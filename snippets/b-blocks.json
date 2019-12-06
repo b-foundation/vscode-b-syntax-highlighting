@@ -82,5 +82,12 @@
       "$3"
     ],
     "description": "While-loop block"
+  },
+  "return-statement": {
+    "prefix": "ret",
+    "body": [
+      "return($1);"
+    ],
+    "description": "Return statement"
   }
 }
