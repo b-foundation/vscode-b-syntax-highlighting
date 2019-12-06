@@ -52,7 +52,7 @@ repository:
     - name: keyword.operator.arithmetic.b
       match: '--|\+\+|(?<!/)\*\*|(?<!\*)/(?!/|\*)|%|\*(?<!/\*)(?!/([^\*]|$))|\+|-'
     - name: keyword.operator.assignment.b
-      match: '=(?!(=|>))'
+      match: '(=>|(=(?!(=))))'
 
   strings:
     patterns:
