@@ -2,10 +2,18 @@
   "auto-statement": {
     "prefix": "auto",
     "body": [
-      "auto $1 = $2;",
-      "$3"
+      "auto $1;",
+      "$2"
     ],
     "description": "Auto statement"
+  },
+  "extrn-statement": {
+    "prefix": "extrn",
+    "body": [
+      "extrn $1;",
+      "$2"
+    ],
+    "description": "Extrn statement"
   },
   "if-block-section": {
     "prefix": "if",
