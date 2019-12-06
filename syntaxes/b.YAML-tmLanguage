@@ -42,7 +42,7 @@ repository:
   operators:
     patterns:
     - name: keyword.operator.logical.b
-      match: '!(?!=)|&&|\|\|'
+      match: '!(?!=)'
     - name: keyword.operator.bitwise.b
       match: '<<|>>|&|\|'
     - name: keyword.operator.relational.b
