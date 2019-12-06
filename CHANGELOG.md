@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.3.0 (December 6, 2019)
+- Fix broken pattern for the ternary operator
+- Add comments, operators, functions to partial patterns for the ternary operator and fix their order
+- Make the function patterns more strict
+- Make the keyword patterns more strict
+- Remove the unsupported constant pattern
+- Remove the unsupported entity name pattern
+- Allow a capital letter to be the first in the variable name pattern
+- Add a pattern for the label
+
 ## 0.2.0 (December 6, 2019)
 - Add vscode marketplace badges
 - Remove pattern for unsupported regex literal
