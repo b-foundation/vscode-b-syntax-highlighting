@@ -162,7 +162,7 @@
             <string>\?</string>
             <key>beginCaptures</key>
             <dict>
-              <key>0</key>
+              <key>1</key>
               <array>
                 <dict>
                   <key>name</key>
@@ -171,10 +171,10 @@
               </array>
             </dict>
             <key>end</key>
-            <string>:</string>
+            <string>\:</string>
             <key>endCaptures</key>
             <dict>
-              <key>0</key>
+              <key>1</key>
               <array>
                 <dict>
                   <key>name</key>
@@ -186,11 +186,15 @@
             <array>
               <dict>
                 <key>include</key>
-                <string>#constant</string>
+                <string>#comments</string>
               </dict>
               <dict>
                 <key>include</key>
-                <string>#variables</string>
+                <string>#constants</string>
+              </dict>
+              <dict>
+                <key>include</key>
+                <string>#operators</string>
               </dict>
               <dict>
                 <key>include</key>
@@ -198,7 +202,11 @@
               </dict>
               <dict>
                 <key>include</key>
-                <string>$self</string>
+                <string>#functions</string>
+              </dict>
+              <dict>
+                <key>include</key>
+                <string>#variables</string>
               </dict>
             </array>
           </dict>
