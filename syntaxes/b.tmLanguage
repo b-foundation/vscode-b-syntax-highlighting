@@ -159,47 +159,46 @@
             <key>comment</key>
             <string>keyword.operator.ternary.b</string>
             <key>begin</key>
-            <string>\s*+(\?)(?!\.[^\d]|\?)</string>
-            <key>end</key>
-            <string>\s*(:)((?=::)|(?!:))</string>
+            <string>\?</string>
             <key>beginCaptures</key>
             <dict>
-              <key>1</key>
-              <dict>
-                <key>name</key>
-                <string>keyword.operator.ternary.b</string>
-              </dict>
+              <key>0</key>
+              <array>
+                <dict>
+                  <key>name</key>
+                  <string>keyword.operator.ternary.b</string>
+                </dict>
+              </array>
             </dict>
+            <key>end</key>
+            <string>:</string>
             <key>endCaptures</key>
             <dict>
-              <key>1</key>
-              <dict>
-                <key>name</key>
-                <string>keyword.operator.ternary.b</string>
-              </dict>
+              <key>0</key>
+              <array>
+                <dict>
+                  <key>name</key>
+                  <string>keyword.operator.ternary.b</string>
+                </dict>
+              </array>
             </dict>
             <key>patterns</key>
             <array>
               <dict>
-                <key>begin</key>
-                <string>\s*+(?=((?:[$_\p{L}\p{Nl}]|\\u\h{4}|\\u{\h+})(?:[$_\p{L}\p{Mn}\p{Mc}\p{Nd}\p{Nl}\p{Pc}\x{200C}\x{200D}]|\\u\h{4}|\\u{\h+})*+)\s*:)</string>
-                <key>end</key>
-                <string>\s*(?=:)</string>
-                <key>patterns</key>
-                <array>
-                  <dict>
-                    <key>include</key>
-                    <string>#constant</string>
-                  </dict>
-                  <dict>
-                    <key>include</key>
-                    <string>#variables</string>
-                  </dict>
-                  <dict>
-                    <key>include</key>
-                    <string>#strings</string>
-                  </dict>
-                </array>
+                <key>include</key>
+                <string>#constant</string>
+              </dict>
+              <dict>
+                <key>include</key>
+                <string>#variables</string>
+              </dict>
+              <dict>
+                <key>include</key>
+                <string>#strings</string>
+              </dict>
+              <dict>
+                <key>include</key>
+                <string>$self</string>
               </dict>
             </array>
           </dict>
