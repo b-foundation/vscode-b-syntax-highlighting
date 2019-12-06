@@ -44,7 +44,7 @@ repository:
     - name: keyword.operator.logical.b
       match: '!(?!=)|&&|\|\|'
     - name: keyword.operator.bitwise.b
-      match: '~|<<|>>>|>>|&|\^|\|'
+      match: '<<|>>|&|\|'
     - name: keyword.operator.relational.b
       match: '<=|>=|<|>'
     - name: keyword.operator.comparison.b

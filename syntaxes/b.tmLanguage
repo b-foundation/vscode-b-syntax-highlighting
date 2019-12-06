@@ -129,7 +129,7 @@
             <key>name</key>
             <string>keyword.operator.bitwise.b</string>
             <key>match</key>
-            <string>~|&lt;&lt;|&gt;&gt;&gt;|&gt;&gt;|&amp;|\^|\|</string>
+            <string>&lt;&lt;|&gt;&gt;|&amp;|\|</string>
           </dict>
           <dict>
             <key>name</key>
