@@ -1,6 +1,6 @@
 # Syntax highlighting for the [B](https://en.wikipedia.org/wiki/B_(programming_language)) language
 
-[![Version](https://vsmarketplacebadge.apphb.com/version/baleiko.b-syntax-highlighting.svg)](https://marketplace.visualstudio.com/items?itemName=baleiko.b-syntax-highlighting) [![Installs](https://vsmarketplacebadge.apphb.com/installs-short/baleiko.b-syntax-highlighting.svg)](https://marketplace.visualstudio.com/items?itemName=baleiko.b-syntax-highlighting) [![Rating](https://vsmarketplacebadge.apphb.com/rating-short/baleiko.b-syntax-highlighting.svg)](https://marketplace.visualstudio.com/items?itemName=baleiko.b-syntax-highlighting)
+[![Version](https://vsmarketplacebadge.apphb.com/version/baleiko.b-syntax-highlighting.svg)](https://marketplace.visualstudio.com/items?itemName=baleiko.b-syntax-highlighting) [![Installs](https://vsmarketplacebadge.apphb.com/installs-short/baleiko.b-syntax-highlighting.svg)](https://marketplace.visualstudio.com/items?itemName=baleiko.b-syntax-highlighting) [![Rating](https://vsmarketplacebadge.apphb.com/rating-short/baleiko.b-syntax-highlighting.svg)](https://marketplace.visualstudio.com/items?itemName=baleiko.b-syntax-highlighting) [![The MIT License](https://img.shields.io/badge/license-MIT-orange.svg)](http://opensource.org/licenses/MIT)
 
 This package does not claim to complete covering of all the syntax constructions existing in B language specification, moreover, it does not try to fit to any implementation of this language. As additional it contains snippets for some kinds of blocks and statements.
 
