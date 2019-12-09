@@ -1,93 +1,62 @@
 {
   "auto-statement": {
     "prefix": "auto",
-    "body": [
-      "auto $1;",
-      "$2"
-    ],
-    "description": "Auto statement"
+    "body": "auto $1;$2",
+    "description": "auto statement"
   },
   "extrn-statement": {
     "prefix": "extrn",
-    "body": [
-      "extrn $1;",
-      "$2"
-    ],
-    "description": "Extrn statement"
+    "body": "extrn $1;$2",
+    "description": "extrn statement"
   },
-  "if-block-section": {
+  "break-operator": {
+    "prefix": "break",
+    "body": "break;$1",
+    "description": "break operator"
+  },
+  "if-block": {
     "prefix": "if",
-    "body": [
-      "if ($1) {",
-      "\t$2",
-      "}",
-      "$3"
-    ],
-    "description": "If block section"
+    "body": "if ($1) {$2}$3",
+    "description": "if block"
   },
   "else-if-block-section": {
-    "prefix": "}elseif",
-    "body": [
-      "} else if ($1) {",
-      "\t$2",
-      "}",
-      "$3"
-    ],
-    "description": "Else-if block section"
+    "prefix": "elseif",
+    "body": " else if ($1) {$2}$3",
+    "description": "else-if block section"
   },
   "else-block-section": {
-    "prefix": "}else",
-    "body": [
-      "} else {",
-      "\t$1",
-      "}",
-      "$2"
-    ],
-    "description": "Else block section"
+    "prefix": "else",
+    "body": " else {$1}$2",
+    "description": "else block section"
   },
-  "switch-block-section": {
+  "switch-block": {
     "prefix": "switch",
-    "body": [
-      "switch ($1) {",
-      "\t$2",
-      "}",
-      "$3"
-    ],
-    "description": "Switch block"
+    "body": "switch ($1) {$2}$3",
+    "description": "switch block"
   },
   "case-block-section": {
     "prefix": "case",
-    "body": [
-      "case $1:",
-      "\t$2",
-      "\tbreak;"
-      "$3"
-    ],
-    "description": "Case block section"
+    "body": "case $1:$2break;$3",
+    "description": "case block section"
   },
   "default-block-section": {
-    "prefix": "def",
-    "body": [
-      "default:",
-      "\t$1"
-    ],
-    "description": "Default block section"
+    "prefix": "default",
+    "body": "default:$1",
+    "description": "default block section"
   },
   "while-block": {
     "prefix": "while",
-    "body": [
-      "while ($1) {",
-      "\t$2",
-      "}",
-      "$3"
-    ],
-    "description": "While-loop block"
+    "body": "while ($1) {$2}$3",
+    "description": "while block"
+  },
+  "function-declaration": {
+    "prefix": "function",
+    "body": "$1($2) {$3}$4",
+    "description": "function declaration"
   },
   "return-statement": {
-    "prefix": "ret",
-    "body": [
-      "return($1);"
-    ],
-    "description": "Return statement"
+    "prefix": "return",
+    "body": "return ($1);",
+    "description": "return statement"
   }
 }
