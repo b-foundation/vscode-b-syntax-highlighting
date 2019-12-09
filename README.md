@@ -9,3 +9,7 @@ This package does not claim to complete covering of all the syntax constructions
 Go to your Visual Studio Code and open the 'Exteions' pane, then find the extension in Marketplace by typing of 'B Syntax highlighting' and press the 'Install' button.
 
 Perhaps, you should restart you Visual Studio Code. Enjoy!
+
+## License
+
+[MIT License](https://opensource.org/licenses/MIT) - see the [LICENSE](https://github.com/baleyko/vscode-b-syntax-highlighting/blob/master/LICENSE.md) for more details.
