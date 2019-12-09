@@ -14,6 +14,11 @@
     "body": "break;$1",
     "description": "break operator"
   },
+  "goto-operator": {
+    "prefix": "goto",
+    "body": "goto $1;$2",
+    "description": "goto operator"
+  },
   "if-block": {
     "prefix": "if",
     "body": "if ($1) {$2}$3",
