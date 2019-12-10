@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.4.0 (December 10, 2019)
+- Add new snippets for: goto, return
+- Make the snippets compatible with the same from extensions for Sublime Text and Atom
+- Add auto indentation after the ':' symbol
+
 ## 0.3.0 (December 6, 2019)
 - Fix broken pattern for the ternary operator
 - Add comments, operators, functions to partial patterns for the ternary operator and fix their order
